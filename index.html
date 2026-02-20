@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="日本のアニメ関連のオフイベント、絵画展、声優イベントをまとめた最新情報ポータルです。">
+    <title>あにいべ！ - 日本アニメ オフイベント情報</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Noto+Sans+JP:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <!-- Hero Section -->
+        <header class="hero">
+            <div class="hero-bg"></div>
+            <div class="hero-content">
+                <span class="badge">最新情報をチェック</span>
+                <h1>あにいべ！</h1>
+                <p>日本のアニメ・声優イベント、絵画展、コラボカフェの最新オフライン情報を探そう。</p>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Filters -->
+            <section class="filters-container">
+                <div class="filters" id="category-filters">
+                    <button class="filter-btn active" data-filter="all">すべて</button>
+                    <button class="filter-btn" data-filter="exhibition">絵画展・原画展</button>
+                    <button class="filter-btn" data-filter="seiyuu">声優イベント</button>
+                    <button class="filter-btn" data-filter="cafe">コラボカフェ</button>
+                    <button class="filter-btn" data-filter="popup">ポップアップストア</button>
+                </div>
+            </section>
+
+            <!-- Event Grid -->
+            <section class="events-section">
+                <div class="events-grid" id="events-grid">
+                    <!-- Event cards will be injected here via JS -->
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2026 あにいべ！ All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
